@@ -19,7 +19,8 @@ After all these pre-processing, we stored the data in a parquet format, partitio
 We used Python as a programming language and PySpark as the framework to leverage the Rutgers iLab spark cluster. All the processing and aggregations on the streaming data were written as well formatted functions. The querying operations that we perform are AGGREGATIONS, COUNT and SUM. We make use of matplotlib animation for visualization on the streaming data.
 ## Usage
 `python streaming_object.py --obj <object_name> --n_files <number of files to trigger for streaming at once>`
-Object Names: 
+<br/>
+**Object Names:** 
 1) prominent_papers
 2) prominent_authors
 3) growing_research
