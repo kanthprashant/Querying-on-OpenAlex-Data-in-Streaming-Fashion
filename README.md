@@ -12,7 +12,7 @@ We used AWS SDK boto3 to download all Computer Science related works between yea
 ## Data Cleaning/Preprocessing
 There are 6 levels of concept that each work is mapped to, lower-level concepts are more general, and higher-level concepts are more specific. Furthermore, each work can be mapped to multiple concepts at same level or no concept at a particular level. Also, as we go higher the distinct concepts tend to become very large, hence it made sense to map them to lower levels of concepts. For this purpose, we map each work to one concept, the logic we use for this filter is to take lowest level of concept other than 0, (as level 0 concept means Computer Science) that has highest score (strength of the connection between the work and this concept). 
 
-One more known issue with OpenAlex data is questionable dates. There are few works that are mapped to future dates like 2051, 2100 etc. We decided to drop these records that they comprised negligible population of the dataset.
+One more known issue with OpenAlex data is questionable dates. There are few works that are mapped to future dates like 2051, 2100 etc. We decided to drop these records as they comprised negligible population of the dataset.
 
 After all these pre-processing, we stored the data in a parquet format, partitioned on year and quarters for streaming.
 ## Execution
