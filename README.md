@@ -17,8 +17,8 @@ One more known issue with OpenAlex data is questionable dates. There are few wor
 After all these pre-processing, we stored the data in a parquet format, partitioned on year and quarters for streaming.
 ## Execution
 We used Python as a programming language and PySpark as the framework to leverage the Rutgers iLab spark cluster. All the processing and aggregations on the streaming data were written as well formatted functions. The querying operations that we perform are AGGREGATIONS, COUNT and SUM. We provide two variations of visulaization codes. 
-- Using matplotlib animation for visualization on the streaming data [vis_matplotlib_anim]("/Code Repository/vis_matplotlib_anim/")
-- A web application run on Python Flask framework. The idea behind using a web application is to provide a user friendly approach to start and the view the results of the stream and query operation in a graphical manner [vis_flask_plotly]("/Code Repository/vis_flask_plotly/")
+- Using matplotlib animation for visualization on the streaming data [vis_matplotlib_anim](/Code%20Repository/vis_matplotlib_anim/)
+- A web application run on Python Flask framework. The idea behind using a web application is to provide a user friendly approach to start and the view the results of the stream and query operation in a graphical manner [vis_flask_plotly](/Code%20Repository/vis_flask_plotly/)
 ## Usage [vis_matplotlib_anim]
 `python streaming_object.py --obj <object_name> --n_files <number of files to trigger for streaming at once>`
 <br/><br/>
