@@ -27,3 +27,8 @@ We used Python as a programming language and PySpark as the framework to leverag
 2) prominent_authors
 3) growing_research
 4) publication_distribution
+
+## Contributions
+1. [Prashant Kanth](https://github.com/kanthprashant)
+2. [Arun Subbaiah](https://github.com/arun-sp)
+3. [Sandesh Mangalore](https://github.com/sandeshmangalore)
