@@ -1,0 +1,44 @@
+.white-bg {
+  background: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+}
+
+.header > h1 {
+  color: white;
+}
+
+.body {
+  padding: 2rem 3rem;
+  height: 100%;
+}
+
+.sider {
+  background-color: #f0f2f5;
+}
+
+.content {
+  margin: 0 0 0 2rem;
+  padding: 2rem;
+}
+
+.plot {
+  padding: 1rem;
+  height: calc(100% - 0.5em - 26px);
+  justify-content: center;
+  align-items: center;
+}
+
+/* .footer {
+  text-align: center;
+} */
